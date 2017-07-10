@@ -15,6 +15,10 @@ icacls %1 /remove:d 未知账户 /T
 if "%lastletter%"=="\" icacls %1* /remove:d 未知账户 /T
 icacls %1 /remove:d SYSTEM /T
 if "%lastletter%"=="\" icacls %1* /remove:d SYSTEM /T
+icacls %1 /remove:d Administrators /T
+if "%lastletter%"=="\" icacls %1* /remove:d Administrators /T
+icacls %1 /remove:d None /T
+if "%lastletter%"=="\" icacls %1* /remove:d None /T
 icacls %1 /remove:d Users /T
 if "%lastletter%"=="\" icacls %1* /remove:d Users /T
 icacls %1 /remove:d "Authenticated Users" /T
